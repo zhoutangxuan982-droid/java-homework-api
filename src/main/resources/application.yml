@@ -1,0 +1,21 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: java-homework-api
+
+app:
+  storage:
+    # 用户数据文件路径（相对项目根目录）
+    user-file: data/users.json
+
+  password:
+    # 密码最小长度
+    min-length: 6
+
+  username:
+    # 用户名长度与允许字符（正则）
+    min-length: 3
+    max-length: 16
+    pattern: "^[a-zA-Z0-9_]+$"
